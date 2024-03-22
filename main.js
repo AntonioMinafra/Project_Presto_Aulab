@@ -63,7 +63,7 @@ let card_wrapper = document.querySelector("#card_wrapper")
 announcements.forEach( (object ,i)=>{
     if(i >= announcements.length -3 ){
         let div = document.createElement("div");
-        div.classList.add("col-11", "col-lg-3");
+        div.classList.add("col-11" ,"mb-3", "col-lg-3");
         div.innerHTML = `
         <div class="card position-relative h-100">
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-2">
@@ -74,11 +74,11 @@ announcements.forEach( (object ,i)=>{
         </div>
         <div class="card-body d-flex flex-column justify-content-between">
         <h3 class="card-title text-center fw-bold">${object.name}</h3>
-        <p class="card-text">Categoria:<span class="fs-4">${object.categoria}</span></p>
-        <p class="card-text">Prezzo:<span class="fs-4">${object.prezzo}</span></p>
+        <p class="card-text">Categoria: <span class="fs-4">${object.categoria}</span></p>
+        <p class="card-text">Prezzo: <span class="fs-4">${object.prezzo}</span></p>
         <div class="d-flex justify-content-between">
         <i class="bi bi-heart fs-3"></i>
-        <a href="#" class="btn btn-primary">Aggiungi al Carello</a>
+        <a href="#" class="my_btn text-decoration-none text-dark">Aggiungi al Carello</a>
         </div>
         </div>
         </div>
