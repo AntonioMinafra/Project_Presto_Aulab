@@ -62,6 +62,10 @@
     }
 }
 
+.riga{
+    border-bottom: 2px solid var(--color-acc);
+}
+
 /* SEZIONE NAVBAR */
 
 .transition{
@@ -106,4 +110,35 @@
 
 .card:hover > div >img{
     transform: scale(1.2);
+}
+
+/* filtri */
+.bowFiltri{
+    background-color: #693725a2;
+    border-radius: 20px;
+    padding: 20px;
+    position: sticky;
+    top: 150px;
+}
+/* SWIPER */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.img_swiper{
+    width: 100%;
+    height: 100%;
 }

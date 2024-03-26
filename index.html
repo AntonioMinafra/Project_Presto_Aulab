@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presto.Js</title>
+
+    <!-- LINK CSS SWIPER -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- link aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- GOOGLE FONTS  -->
@@ -75,10 +81,10 @@
                 <img class="w-75 img_dinamic" src="./media/circle.jpg" alt="">
             </div>
         </div>
-        <div class="container my-5">
+        <div class="container riga my-5">
             <div class="row boxQuote align-items-center ">
                 <div class="col-12">
-                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero odit sequi nemo debitis voluptatem obcaecati fugiat? Quam perferendis laboriosam, amet eligendi mollitia nobis neque tempore corporis nihil ab optio ipsam?</h2>
+                    <h2 class="title-font color_p ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero odit sequi nemo debitis voluptatem obcaecati fugiat? Quam perferendis laboriosam, amet eligendi mollitia nobis neque tempore corporis nihil ab optio ipsam?</h2>
                 </div>
             </div>
         </div>
@@ -87,73 +93,178 @@
 
     <!-- SEZIONE ANNUNCI -->
     <section class="container">
+        <div class="col-12">
+            <h2 data-aos="flip-up" class="title-font mt-5 border-bottom display-1 text-center color_p">Ultimi Annunci</h2>
+        </div>
         <div id="card_wrapper" class="row  justify-content-evenly">
             <!-- qui vanno le card create con js -->
-            </div>
-        </div>
-    </section>
-    <!-- FINE SEZIONE ANNUNCI -->
-
-
-    <!-- SEZIONE CATEGORIE -->
-    <div class="container animation">
-        <div class="row justify-content-evenly">
-            <div class="col-12">
-                <h2 class="title-font mt-5 border-bottom display-1 text-center color_p">Categorie</h2>
-            </div>
-            <div data-aos-delay="100" data-aos="zoom-in-right" class="col-5 col-lg-3 my-5 mx-lg-1">
-                <img class="img_category" src="https://picsum.photos/200" alt="">
-            </div>
-            <div data-aos-delay="100" data-aos="zoom-in" class="col-5 col-lg-3 my-5 mx-lg-1">
-                <img class="img_category" src="https://picsum.photos/201" alt="">
-            </div>
-            <div data-aos-delay="100" data-aos="zoom-in-left" class="col-5 col-lg-3 my-5 mx-lg-1">
-                <img class="img_category" src="https://picsum.photos/202" alt="">
-            </div>
-            <div data-aos-delay="200" data-aos="zoom-in-right" class="col-5 col-lg-3 my-5 mx-lg-1">
-                <img class="img_category" src="https://picsum.photos/203" alt="">
-            </div>
-            <div data-aos-delay="200" data-aos="zoom-in" class="col-5 col-lg-3 my-5 mx-lg-1">
-                <img class="img_category" src="https://picsum.photos/204" alt="">
-            </div>
-            <div data-aos-delay="200" data-aos="zoom-in-left" class="col-5 col-lg-3 my-5 mx-lg-1">
-                <img class="img_category" src="https://picsum.photos/205" alt="">
-            </div>
         </div>
     </div>
-    <!-- FINE SEZIONE CATEGORIE -->
+</section>
+<!-- FINE SEZIONE ANNUNCI -->
 
-    <!-- SEZIONE NUMERI -->
-    <div class="container my-5">
-        <div class="row justify-content-evenly">
-            <div class="col-12">
-                <h2 class="title-font border-bottom display-1 text-center color_p">I NOSTRI NUMERI</h2>
-            </div>
-            <div class="col-3 m-3 box_number d-flex flex-column align-items-center justify-content-center">
-                <h6 class="fs-6">Articoli:</h6>
-                <p class="fs-6"><span id="numArticle"></span>+</p>
-            </div>
-            <div class="col-3 m-3 box_number d-flex flex-column align-items-center justify-content-center">
-                <h6 class="fs-6">Utenti:</h6>
-                <p class="fs-6"><span id="numUsers"></span>+</p>
-            </div>
-            <div class="col-3 m-3 box_number d-flex flex-column align-items-center justify-content-center">
-                <h6 class="fs-6">Recensioni:</h6>
-                <p  class="fs-6"><span id="numRec">0</span>+</p>
-            </div>
+
+<!-- SEZIONE CATEGORIE -->
+<div class="container animation">
+    <div class="row justify-content-evenly">
+        <div class="col-12">
+            <h2 data-aos="flip-up" class="title-font mt-5 border-bottom display-1 text-center color_p">Categorie</h2>
+        </div>
+        <div data-aos-delay="100" data-aos="zoom-in-right" class="col-5 col-lg-3 my-5 mx-lg-1">
+            <img class="img_category" src="https://picsum.photos/200" alt="">
+        </div>
+        <div data-aos-delay="100" data-aos="zoom-in" class="col-5 col-lg-3 my-5 mx-lg-1">
+            <img class="img_category" src="https://picsum.photos/201" alt="">
+        </div>
+        <div data-aos-delay="100" data-aos="zoom-in-left" class="col-5 col-lg-3 my-5 mx-lg-1">
+            <img class="img_category" src="https://picsum.photos/202" alt="">
+        </div>
+        <div data-aos-delay="200" data-aos="zoom-in-right" class="col-5 col-lg-3 my-5 mx-lg-1">
+            <img class="img_category" src="https://picsum.photos/203" alt="">
+        </div>
+        <div data-aos-delay="200" data-aos="zoom-in" class="col-5 col-lg-3 my-5 mx-lg-1">
+            <img class="img_category" src="https://picsum.photos/204" alt="">
+        </div>
+        <div data-aos-delay="200" data-aos="zoom-in-left" class="col-5 col-lg-3 my-5 mx-lg-1">
+            <img class="img_category" src="https://picsum.photos/205" alt="">
         </div>
     </div>
-    <!-- FINE SEZIONE NUMERI -->
+</div>
+<!-- FINE SEZIONE CATEGORIE -->
+
+<!-- SEZIONE NUMERI -->
+<div class="container my-5">
+    <div class="row justify-content-evenly">
+        <div class="col-12">
+            <h2 class="title-font border-bottom display-1 text-center color_p">I NOSTRI NUMERI</h2>
+        </div>
+        <div class="col-3 m-3 box_number d-flex flex-column align-items-center justify-content-center">
+            <h6 class="fs-6">Articoli:</h6>
+            <p class="fs-6"><span id="numArticle"></span>+</p>
+        </div>
+        <div class="col-3 m-3 box_number d-flex flex-column align-items-center justify-content-center">
+            <h6 class="fs-6">Utenti:</h6>
+            <p class="fs-6"><span id="numUsers"></span>+</p>
+        </div>
+        <div class="col-3 m-3 box_number d-flex flex-column align-items-center justify-content-center">
+            <h6 class="fs-6">Recensioni:</h6>
+            <p  class="fs-6"><span id="numRec">0</span>+</p>
+        </div>
+    </div>
+</div>
+<!-- FINE SEZIONE NUMERI -->
+
+<!-- SEZIONE CAROUSEL -->
+<!-- Swiper -->
+<div class="container">
+    <div class="col-12">
+        <h2 data-aos="flip-up" class="title-font border-bottom display-1 text-center color_p">Prossimi Arrivi</h2>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://media.istockphoto.com/id/500999898/it/foto/cinese-jade-dragon.jpg?s=1024x1024&w=is&k=20&c=OnFR_Mgc9wZygU33-YZb-Fn4QeW5HkyyTAE1RzQ7FKQ=" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://images.unsplash.com/photo-1615790469537-7c9d8e95c047?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://media.istockphoto.com/id/95432684/it/foto/spada-di-samurai-giapponesi-mano-e-protezione-avvolgente.jpg?s=1024x1024&w=is&k=20&c=CBQevGnbo_B0ivd2qYxpCXml89Fs0bSTROUJCefECfA=" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://images.unsplash.com/photo-1599598177991-ec67b5c37318?q=80&w=2825&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://images.unsplash.com/photo-1544592218-b546f7b9ddb4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://plus.unsplash.com/premium_photo-1678257846779-4cbdc2e653c6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img class="img_swiper" src="https://images.unsplash.com/photo-1622995546395-120dbec78561?q=80&w=2770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- FINE SEZIONE CAROUSEL -->
+
+<!-- SEZIONE FOOTER -->
+<div class="container">
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="my_btn" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<!-- FINE SEZIONE FOOTER -->
 
 
-    <!-- CDN AoS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!--CDN BOOTSTRAP  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- MY JS -->
-    <script src="./main.js"></script>
+<!-- CDN SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- CDN AoS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!--CDN BOOTSTRAP  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- MY JS -->
+<script src="./main.js"></script>
 </body>
 </html>
